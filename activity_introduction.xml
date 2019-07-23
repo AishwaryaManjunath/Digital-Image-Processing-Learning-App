@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Introduction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="Image Processing: \n\n Sight/vision is one of the greatest powers of a human being. Our eyes can tell us the shape, size, colour of any and everything which comes in front of it.An Image is a 2 D light intensity function f(x,y). A digital image f(x,y) is discretized both in spatial coordinates and brightness. It can be considered as a matrix whose row, column indices specify a point in the image and the element value identifies the intensity value at that points. These elements are referred to as pixels. \n \n An intensity value stored at a pixel is defined as the product of illumination and reflectance at that particular point. You must have observed higher the illumination at a particular, the brighter image is.
+\n Now the question in front of us is how to teach our bot this power of sight. As we know we can’t directly write codes for a bot to just see a thing and recognize it right away.
+\n Image Processing, as its name suggests, is the processing of various algorithms to get the results according to our wish. A day to day life example of Image Processing can be of Adobe’s Photoshop or Microsoft’s Picture Manager or Google’s Picasa are a few software. These software’s provide a user interface for the user to apply different applications such as cropping, colour changing. Although these applications are easy to use the software behind it has been written by a certain code.
+\n In this course we are going to discuss the basic usage of Image processing with respect to robotics and their further applications.
+\n \n There are two types of image processing;
+\n 1.	Analog
+\n 2.	Digital
+"
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conceptsonpixel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concept of Pixel"
+            android:textAlignment="center"
+            android:textColor="#00008B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n\n Pixel :  \n Pixel is the smallest element of an image. Each pixel correspond to any one value. In an 8-bit gray scale image, the value of the pixel between 0 and 255. The value of a pixel at any point correspond to the intensity of the light photons striking at that point. Each pixel store a value proportional to the light intensity at that particular location. \n\n PEL : \n A pixel is also known as PEL. You can have more understanding of the pixel from the pictures given below. \n In the above picture, there may be thousands of pixels, that together make up this image. We will zoom that image to the extent that we are able to see some pixels division. It is shown in the image below. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/conceptpixel1" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/conceptpixel2" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n\n Relationship with CCD array \n We have seen that how an image is formed in the CCD array. So a pixel can also be defined as \n The smallest division the CCD array is also known as pixel. Each division of CCD array contains the value against the intensity of the photon striking to it. This value can also be called as a pixel. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/conceptpixel3" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n\n Calculation of total number of pixels \n We have define an image as a two dimensional signal or matrix. Then in that case the number of PEL would be equal to the number of rows multiply with number of columns. \n This can be mathematically represented as below: \n Total number of pixels = number of rows ( X ) number of columns Or we can say that the number of (x,y) coordinate pairs make up the total number of pixels. \n We will look in more detail in the tutorial of image types, that how do we calculate the pixels in a color image. \n\n Gray level \n The value of the pixel at any point denotes the intensity of image at that location, and that is also known as gray level. \n We will see in more detail about the value of the pixels in the image storage and bits per pixel tutorial, but for now we will just look at the concept of only one pixel value. \n\n Pixel value.(0) \n As it has already been define in the beginning of this tutorial, that each pixel can have only one value and each value denotes the intensity of light at that point of the image. \n We will now look at a very unique value 0. The value 0 means absence of light. It means that 0 denotes dark, and it further means that when ever a pixel has a value of 0, it means at that point, black color would be formed."
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

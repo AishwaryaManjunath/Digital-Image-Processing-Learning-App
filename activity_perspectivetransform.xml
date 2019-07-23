@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perspectivetransform">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perspective Transformation"
+            android:textAlignment="center"
+            android:textColor="#00008B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n\n When human eyes see near things they look bigger as compare to those who are far away. This is called perspective in a general way. Whereas transformation is the transfer of an object e.t.c from one state to another. \n So overall, the perspective transformation deals with the conversion of 3d world into 2d image. The same principle on which human vision works and the same principle on which the camera works. \n We will see in detail about why this happens, that those objects which are near to you look bigger, while those who are far away, look smaller even though they look bigger when you reach them. \n We will start this discussion by the concept of frame of reference: \n\n Frame of reference:	 \n Frame of reference is basically a set of values in relation to which we measure something. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective1" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n 5 frames of reference \n In order to analyze a 3d world/image/scene, 5 different frame of references are required. \n(a) Object \n(b) World \n(c) Camera \n(d) Image \n(e) Pixel \n\n Object coordinate frame \n Object coordinate frame is used for modeling objects. For example, checking if a particular object is in a proper place with respect to the other object. It is a 3d coordinate system. \n\n World coordinate frame \n World coordinate frame is used for co-relating objects in a 3 dimensional world. It is a 3d coordinate system. \n\n Camera coordinate frame \n Camera co-ordinate frame is used to relate objects with respect of the camera. It is a 3d coordinate system. \n\n Image coordinate frame \n It is not a 3d coordinate system, rather it is a 2d system. It is used to describe how 3d points are mapped in a 2d image plane. \n\n Pixel coordinate frame \n It is also a 2d coordinate system. Each pixel has a value of pixel co ordinates. \n\n Transformation between these 5 frames "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective2" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n That’s how a 3d scene is transformed into 2d, with image of pixels. Now we will explain this concept mathematically. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective3" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Where \n Y = 3d object \n y = 2d Image \n f = focal length of the camera \n Z = distance between object and the camera \n Now there are two different angles formed in this transform which are represented by Q. \n The first angle is "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective4" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Where minus denotes that image is inverted. The second angle that is formed is:"
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective5" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Comparing these two equations we get"
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective6" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n From this equation, we can see that when the rays of light reflect back after striking from the object, passed from the camera, an invert image is formed. \n We can better understand this, with this example. \n For example \n\n Calculating the size of image formed \n Suppose an image has been taken of a person 5m tall, and standing at a distance of 50m from the camera, and we have to tell that what is the size of the image of the person, with a camera of focal length is 50mm. \n\n Solution: \n Since the focal length is in millimeter, so we have to convert every thing in millimeter in order to calculate it. \n So, \n Y = 5000 mm. \n f = 50 mm. \n Z = 50000 mm. \n Putting the values in the formula, we get   \n = -5 mm. \n Again, the minus sign indicates that the image is inverted. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/perspective7" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n = -5 mm. \n Again, the minus sign indicates that the image is inverted. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

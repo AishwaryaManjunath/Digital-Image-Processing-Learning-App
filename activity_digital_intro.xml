@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Digital_intro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digital image processing
+\n In digital image processing, digital images are processed digitally, Photoshop is a good example, Instagram is another.
+\n \n Image Processing has 2 major categories:
+\n 1) Improvement of Pictorial information for human perception:
+\n This category mainly concerns the operations on the pictures which are already stored in the system.
+\n \n The applications are:-
+\n (a) Image Enhancement: As I wrote above, the intensity of an image is a function of illumination. So sometimes due to low illumination conditions, we get a dull image. To overcome this we apply Image Enhancement techniques.
+\n (b) Removing blurriness of Images: Many a time we observe that our images are blurred due to a problem with camera focus or when we take an image from a moving platform the images appear blurred. This can be overshadowed by Image restoration Techniques. It is also helpful in Noise Filtering.
+\n (c) Segmentation: As the name suggests it helps to segment the part of the image on a predefined condition.
+\n (d)  Morphological Processing: This is a very important aspect of Image Processing as deals with the shapes of the segmented image.
+\n (e) Object Recognition, Representation and Description: These applications involve the recognition and representations of the image.
+\n (e) Colour Image Processing: This application deals with the colours involved in the particular image, which is if we want to segment a red colour object from a particular image, then what conditions we need to provide.
+\n \n 2. Image Processing for Robotics:
+\n This category mainly concerns with the real-time applications of Image Processing. These applications are used in user-controlled robots, autonomous robots, autonomous machine application.
+\n \n Some applications can be:
+\n (a) Industrial Machine Vision for product assembly and inspection.
+\n (b)Automated Target detection and tracking
+\n (c)Finger Print, Iris, Facial Recognition Systems.
+\n (d)Robotic Vision
+\n (e)Autonomous robots and autonomous vehicles.
+\n \n we saw an intro to the world of Image Processing and some of the major applications of Image Processing. Still, to perform all the above-said techniques, we would need a computing platform and a software. There are many soft wares which provide image processing applications in both the above categories, like, MATLAB, OpenCV, Image J, LABVIEW, to name a few.
+"
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bitsperpixel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concept of Bits Per Pixel"
+            android:textAlignment="center"
+            android:textColor="#00008B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Bpp or bits per pixel denotes the number of bits per pixel. The number of different colors in an image is depends on the depth of color or bits per pixel. \n\n Bits in mathematics: \n Its just like playing with binary bits. \n How many numbers can be represented by one bit. \n 0	 \n 1 \n How many two bits combinations can be made. \n 00 \n 01 \n 10 \n 11 \n If we devise a formula for the calculation of total number of combinations that can be made from bit, it would be like this. "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitsperpixel1" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Where bpp denotes bits per pixel. Put 1 in the formula you get 2, put 2 in the formula, you get 4. It grows exponentially. \n Number of different colors: \n Now as we said it in the beginning, that the number of different colors depend on the number of bits per pixel.\n \n Shades :
+\n You can easily notice the pattern of the exponentional growth. The famous gray scale image is of 8 bpp , means it has 256 different colors in it or 256 shades.
+\n Shades can be represented as:
+"
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitsperpixel2" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Color images are usually of the 24 bpp format, or 16 bpp. \n We will see more about other color formats and image types in the tutorial of image types. \n\n Color values: \n We have previously seen in the tutorial of concept of pixel, that 0 pixel value denotes black color. \n\n Black color: \n Remember, 0 pixel value always denotes black color. But there is no fixed value that denotes white color. \n\n White color: \n The value that denotes white color can be calculated as : "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitsperpixel3" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n In case of 1 bpp, 0 denotes black, and 1 denotes white. \n In case 8 bpp, 0 denotes black, and 255 denotes white. \n\n Gray color: \n When you calculate the black and white color value, then you can calculate the pixel value of gray color. \n Gray color is actually the mid point of black and white. That said, \n In case of 8bpp, the pixel value that denotes gray color is 127 or 128bpp (if you count from 1, not from 0). \n\n Image storage requirements : \n After the discussion of bits per pixel, now we have every thing that we need to calculate a size of an image. \n Image size \n The size of an image depends upon three things. \n (a)Number of rows \n (b)Number of columns \n (c)Number of bits per pixel \n The formula for calculating the size is given below. \n Size of an image = rows * cols * bpp \n It means that if you have an image, lets say this one: "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitsperpixel4" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Assuming it has 1024 rows and it has 1024 columns. And since it is a gray scale image, it has 256 different shades of gray or it has bits per pixel. Then putting these values in the formula, we get \n Size of an image = rows * cols * bpp \n = 1024 * 1024 * 8 \n = 8388608 bits. \n But since its not a standard answer that we recognize, so will convert it into our format. \n Converting it into bytes = 8388608 / 8 = 1048576 bytes. \n Converting into kilo bytes = 1048576 / 1024 = 1024kb. \n Converting into Mega bytes = 1024 / 1024 = 1 Mb. \n That’s how an image size is calculated and it is stored. Now in the formula, if you are given the size of image and the bits per pixel, you can also calculate the rows and columns of the image, provided the image is square(same rows and same column). "
+            android:textColor="#00008B"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
