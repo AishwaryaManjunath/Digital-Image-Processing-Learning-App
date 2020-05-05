@@ -1,3 +1,3 @@
-# projectone
+# Pixel
 
 my first project
